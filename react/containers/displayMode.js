@@ -2,7 +2,9 @@ import { connect } from 'react-redux';
 import { setDisplayMode } from '../actions';
 import DisplayMode from '../components/displayMode';
 
-const mapStateToProps = null;
+const mapStateToProps = state=>({
+   displayMode:   state.displayMode
+});
 
 const mapDispatchToProps = dispatch => ({
   setListing: () => {
